@@ -117,7 +117,10 @@ class Application extends PKPApplication {
 			'SubscriptionDAO' => 'classes.subscription.SubscriptionDAO',
 			'SubscriptionTypeDAO' => 'classes.subscription.SubscriptionTypeDAO',
 			'UserDAO' => 'classes.user.UserDAO',
-			'UserSettingsDAO' => 'classes.user.UserSettingsDAO'
+			'UserSettingsDAO' => 'classes.user.UserSettingsDAO',
+                        'CarhusDAO' => 'classes.carhus.CarhusDAO',
+			'FecytDAO' => 'classes.fecyt.FecytDAO',
+                        'JcrDAO' => 'classes.jcr.JcrDAO',
 		));
 	}
 

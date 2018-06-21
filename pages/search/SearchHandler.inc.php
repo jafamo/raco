@@ -124,6 +124,16 @@ class SearchHandler extends Handler {
 			$rangeInfo
 		);
 
+                //CSUC 1/06/2018
+                $publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+                $fecyt=$request->getUserVar('fecyt');
+                $journal = $request->getJournal();
+                if($fecyt) {
+			$journal .= 'fecyt';
+			$yearRange = $publishedArticleDao->getArticleYearRange(null);
+		}
+                
+                
 		// Prepare and display the search template.
 		$this->setupTemplate($request);
 		$templateMgr = TemplateManager::getManager($request);
@@ -142,7 +152,7 @@ class SearchHandler extends Handler {
 
 		// Similar documents.
 		$templateMgr->assign('simDocsEnabled', true);
-
+                
 		// Result set display.
 		$this->_assignSearchFilters($request, $templateMgr, $searchFilters);
 		$templateMgr->assign('results', $results);

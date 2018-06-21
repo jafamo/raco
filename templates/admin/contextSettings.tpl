@@ -43,6 +43,11 @@
 			{if $enabled}{assign var="enabled" value="checked"}{/if}
 			{fbvElement type="checkbox" id="enabled" checked=$enabled value="1" label="admin.journals.enableJournalInstructions"}
 		{/fbvFormSection}
+                
+                {fbvFormSection for="enabled" list=true}
+			{if $enabled}{assign var="enabled" value="checked"}{/if}
+			{fbvElement type="checkbox" id="enabled" checked=$enabled value="1" label="Mis Pruebas"}
+		{/fbvFormSection}
 
 		<p><span class="formRequired">{translate key="common.requiredField"}</span></p>
 		{fbvFormButtons id="journalSettingsFormSubmit" submitText="common.save"}

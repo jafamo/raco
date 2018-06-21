@@ -17,7 +17,7 @@
 			{$about|nl2br}
 		</div>
 	{/if}
-
+        
 	<div class="journals">
 		<h2>
 			{translate key="journal.journals"}

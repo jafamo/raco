@@ -8,7 +8,6 @@
  * Primary navigation menu list for OJS
  *}
 <ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
-
 	{if $enableAnnouncements}
 		<li>
 			<a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">

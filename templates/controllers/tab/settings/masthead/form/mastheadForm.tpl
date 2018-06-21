@@ -52,6 +52,33 @@
 			{fbvElement type="text" name="printIssn" id="printIssn" value=$printIssn label="manager.setup.printIssn" size=$fbvStyles.size.SMALL inline=true}
 		{/fbvFormSection}
 	{/fbvFormArea}
+            
+                        
+         {fbvFormSection list="true"}
+		{fbvElement type="checkbox" id="fecyt" label="FECYT"  checked=$fecyt|compare:true}
+         {/fbvFormSection}
+                
+         {fbvFormSection list="true"}
+		{fbvElement type="checkbox" id="jcr" label="JCR"  checked=$jcr|compare:true}
+	 {/fbvFormSection}
+         
+        {** 
+        {fbvFormSection label="Selecciona Carhus"}
+                    {fbvElement type="select" id="carhus" from=$carhus selected=$carhus translate=false size=$fbvStyles.size.SMALL}
+	{/fbvFormSection}
+         
+        {fbvFormSection for="enabled" list=true}
+			{if $enabled}{assign var="enabled" value="checked"}{/if}
+			{fbvElement type="checkbox" name="fecyt" id="enabled" checked=$enabled value="1" label="fecyt"}
+        {/fbvFormSection}
+        **}
+        
+        
+        {fbvFormArea id="carhus"}
+                {fbvFormSection label="manager.setup.carhus" for="carhus"}
+                        {fbvElement type="text" name="carhus" id="carhus" value=$carhus size=$fbvStyles.size.SMALL inline=true}
+                {/fbvFormSection}
+        {/fbvFormArea}
 
 	{fbvFormArea id="mastheadJournalAbout"}
 		{fbvFormSection label="manager.setup.journalSummary" for="summary" description="manager.setup.journalSummary.description"}

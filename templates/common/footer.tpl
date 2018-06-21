@@ -7,8 +7,38 @@
  *
  * Backend site footer.
  *
- *}
+ *} 
 {assign var=brandImage value="templates/images/ojs_brand.png"}
 {assign var=packageKey value="common.openJournalSystems"}
 {assign var=pkpLink value="http://pkp.sfu.ca/ojs"}
+
+{strip} 
+    {if $pageFooter==''}
+  
+  <div class="issn">
+  {$currentJournal->getSetting('onlineIssn')}
+</div>
+    	{if $currentJournal && $currentJournal->getSetting('onlineIssn')}
+  
+  
+    		{assign var=issn value=$currentJournal->getSetting('onlineIssn')}
+  
+         	{elseif $currentJournal && $currentJournal->getSetting('printIssn')}
+         		{assign var=issn value=$currentJournal->getSetting('printIssn')}
+         	{/if}
+          	{if $issn}
+  
+  		{translate|assign:"issnText" key="journal.issn"}
+              		{assign var=pageFooter value="$issnText: $issn"}
+  
+         	{/if}
+        
+    {/if}
+  
+  
+    {include file="core:common/footer.tpl"}
+  
+  
+    {/strip}
+    
 {include file="core:common/footer.tpl"}

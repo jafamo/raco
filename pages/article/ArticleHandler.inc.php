@@ -94,6 +94,10 @@ class ArticleHandler extends Handler {
 			'article' => $article,
 			'fileId' => $fileId,
 		));
+                $templateMgr->assign('carhus', $journal->getSetting('carhus'));
+                $templateMgr->assign('fecyt', $journal->getSetting('fecyt'));
+                $templateMgr->assign('jcr', $journal->getSetting('jcr'));
+                
 		$this->setupTemplate($request);
 
 		if (!$this->userCanViewGalley($request, $articleId, $galleyId)) fatalError('Cannot view galley.');
@@ -390,7 +394,7 @@ class ArticleHandler extends Handler {
 	 */
 	function setupTemplate($request) {
 		parent::setupTemplate($request);
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_PKP_SUBMISSION);
+		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_PKP_SUBMISSION,LOCALE_COMPONENT_APP_MANAGER);
 	}
 }
 

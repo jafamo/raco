@@ -13,6 +13,7 @@
 {include file="common/header.tpl"}
 {/strip}
 
+<p>Entrando en admin/contexts.tpl</p>
 <script type="text/javascript">
 	// Initialise JS handler.
 	$(function() {ldelim}
@@ -22,18 +23,18 @@
 </script>
 
 <div class="pkp_page_content pkp_page_admin">
-
+    
 	<div id="contexts">
-		{if $openWizardLinkAction}
-			<div id="{$openWizardLinkAction->getId()}" class="pkp_linkActions inline">
-				{include file="linkAction/linkAction.tpl" action=$openWizardLinkAction contextId="contexts" selfActivate=true}
+		{if $openWizardLinkAction}  
+			<div id="{$openWizardLinkAction->getId()}" class="pkp_linkActions inline">                           
+				{include file="linkAction/linkAction.tpl" action=$openWizardLinkAction contextId="contexts" selfActivate=true}                                 
 			</div>
 		{/if}
-
+                
 		{url|assign:journalsUrl router=$smarty.const.ROUTE_COMPONENT component="grid.admin.journal.JournalGridHandler" op="fetchGrid" escape=false}
-		{load_url_in_div id="journalGridContainer" url=$journalsUrl}
+		{load_url_in_div id="journalGridContainer" url=$journalsUrl}              
 	</div>
-
+        
 </div><!-- .pkp_page_content -->
 
 {include file="common/footer.tpl"}

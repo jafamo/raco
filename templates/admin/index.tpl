@@ -23,9 +23,15 @@
 
 	<ul>
 		<li><a href="{url op="contexts"}">{translate key="admin.hostedJournals"}</a></li>
-		{call_hook name="Templates::Admin::Index::SiteManagement"}
+                
+                {*AÑADIR MENU*}
+                <li><a href="{url op="contexts_1"}">{translate key="Context_1"}</a></li>
+		
+                {call_hook name="Templates::Admin::Index::SiteManagement"}
 		{if $multipleContexts}
 			<li><a href="{url op="settings"}">{translate key="admin.siteSettings"}</a></li>
+                        
+                        
 		{/if}
 	</ul>
 

@@ -61,6 +61,54 @@ class ArticleSearchDAO extends SubmissionSearchDAO {
 		if (!empty($publishedTo)) {
 			$sqlWhere .= ' AND ps.date_published <= ' . $this->datetimeToDB($publishedTo);
 		}
+                
+                /**ADD by CSUC 2018
+                 * 
+                 * 
+                 */
+                  
+                
+                  if (substr($journal, 0, 6) == 'carhus') {
+//$journal té el format carhusTABCD (T:cercar a totes les revistes que tenen carhus)
+                if ((substr($journal, 6, 1) == 'T') || (strlen($journal) == 10)) { //Seleccionar T o les 4 classificacions individualment
+                    $sqlWhere .= ' AND i.journal_id IN (select journal_id from journal_settings where setting_name like "%carhus%" AND setting_value=1 and setting_value=1)';
+                } else {
+                    if (strlen($journal) == 7) { //Nomes una classificacio
+                        $sqlWhere .= ' AND i.journal_id IN (select journal_id from journal_settings where setting_name like "%carhus%" AND setting_value=1 AND journal_id IN (select journal_id from journal_settings where setting_name=\'carhus\' and setting_value=?))';
+                        $params[] = substr($journal, 6, 1);
+                    }
+
+                    if (strlen($journal) == 8) {//Dues classificacions
+                        $sqlWhere .= ' AND i.journal_id IN (select journal_id from journal_settings where setting_name like "%carhus%" AND setting_value=1 AND journal_id IN (select journal_id from journal_settings where setting_name=\'carhus\' and (setting_value=? || setting_value=?)))';
+                        $params[] = substr($journal, 6, 1);
+                        $params[] = substr($journal, 7, 1);
+                    }
+                    if (strlen($journal) == 9) {//Tres classificacions
+                        $sqlWhere .= ' AND i.journal_id IN (select journal_id from journal_settings where setting_name like "%carhus%" AND setting_value=1 AND journal_id IN (select journal_id from journal_settings where setting_name=\'carhus\' and (setting_value=? || setting_value=? || setting_value=?)))';
+                        $params[] = substr($journal, 6, 1);
+                        $params[] = substr($journal, 7, 1);
+                        $params[] = substr($journal, 8, 1);
+                    }
+                }
+            }
+
+            if (strpos($journal, 'fecyt') !== false) {
+                $sqlWhere .= ' AND i.journal_id IN (select journal_id from journal_settings where setting_name like "%Fecyt%" AND setting_value=1)';
+            }
+
+            if (strpos($journal, 'jcr') !== false) {
+                $sqlWhere .= ' AND i.journal_id IN (select journal_id from journal_settings where setting_name like "%Jcr%" AND setting_value=1)';
+            }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
 
 		if (!empty($journal)) {
 			$sqlWhere .= ' AND i.journal_id = ?';

@@ -27,7 +27,7 @@
 			<img src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 		</div>
 	{/if}
-
+         
 	{* Announcements *}
 	{if $numAnnouncementsHomepage && $announcements|@count}
 		<div class="cmp_announcements highlight_first">
@@ -57,7 +57,7 @@
 			</div><!-- .more -->
 		</div>
 	{/if}
-
+        
 	{* Latest issue *}
 	{if $issue}
 		<div class="current_issue">
@@ -73,12 +73,31 @@
 			</a>
 		</div>
 	{/if}
-
+        
+        
+        {$car = $currentJournal->getSetting('carhus');}
+        <div class="pkp_block">
+            {if $car=='A' || $car=='B' || car=='C' || $car=='D'}
+            <span class="title">carhus</span>
+            <p>Nivell: {$currentJournal->getSetting('carhus')}</p>
+            {/if}
+            {if $currentJournal->getSetting('fecyt') != 0}
+            <span class="title">fecyt</h2></span>
+            {$currentJournal->getSetting('fecyt')}
+            {/if}
+            
+            {if $currentJournal->getSetting('jcr') != 0}
+             <span class="title">jcr</h2></span>
+            {$currentJournal->getSetting('jcr')}
+            {/if}
+        </div>
+        
 	{* Additional Homepage Content *}
 	{if $additionalHomeContent}
 		<div class="additional_content">
 			{$additionalHomeContent}
 		</div>
+                
 	{/if}
 </div><!-- .page -->
 

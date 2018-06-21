@@ -65,6 +65,7 @@
  * @uses $ccLicenseBadge string An image and text with details about the license
  *}
 <article class="obj_article_details">
+    
 	<h1 class="page_title">
 		{$article->getLocalizedTitle()|escape}
 	</h1>

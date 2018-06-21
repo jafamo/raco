@@ -31,6 +31,9 @@ class MastheadForm extends ContextSettingsForm {
 			'description' => 'string',
 			'editorialTeam' => 'string',
 			'about' => 'string',
+                        'carhus' => 'string',
+                        'fecyt' => 'bool',
+                        'jcr' => 'bool',
 		);
 
 		parent::__construct($settings, 'controllers/tab/settings/masthead/form/mastheadForm.tpl', $wizardMode);
