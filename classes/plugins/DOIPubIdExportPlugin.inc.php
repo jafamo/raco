@@ -33,10 +33,9 @@ abstract class DOIPubIdExportPlugin extends PubObjectsExportPlugin {
 		switch (array_shift($args)) {
 			case 'index':
 			case '':
-				parent::display($args, $request);
 				$templateMgr = TemplateManager::getManager($request);
 				// Check for configuration errors:
-				$configurationErrors = $templateMgr->get_template_vars('configurationErrors');
+				$configurationErrors = $templateMgr->getTemplateVars('configurationErrors');
 				// missing DOI prefix
 				$doiPrefix = $exportArticles = $exportIssues = null;
 				$pubIdPlugins = PluginRegistry::loadCategory('pubIds', true);
@@ -55,7 +54,7 @@ abstract class DOIPubIdExportPlugin extends PubObjectsExportPlugin {
 					'exportIssues' => $exportIssues,
 					'exportRepresentations' => $exportRepresentations,
 				));
-				$templateMgr->display($this->getTemplatePath() . 'index.tpl');
+				$templateMgr->display($this->getTemplateResource('index.tpl'));
 				break;
 		}
 	}
