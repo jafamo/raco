@@ -12,18 +12,17 @@
 {assign var="pageTitle" value="journal.journals"}
 {include file="common/header.tpl"}
 {/strip}
-
 <script type="text/javascript">
 	// Initialise JS handler.
 	$(function() {ldelim}
-		$('#contexts').pkpHandler(
+		$('#context').pkpHandler(
 				'$.pkp.pages.admin.ContextHandler');
 	{rdelim});
 </script>
 
 <div class="pkp_page_content pkp_page_admin">
 
-	<div id="context">
+	<div id="contexts">
 		
 
 		{url|assign:journalsUrl router=$smarty.const.ROUTE_COMPONENT component="grid.admin.journal.JournalRACOGridHandler" op="fetchGrid" escape=false}

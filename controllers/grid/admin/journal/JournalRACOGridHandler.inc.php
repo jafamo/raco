@@ -28,7 +28,7 @@ class JournalRACOGridHandler extends ContextGridHandler {
 	 * @return JSONMessage JSON object
 	 */
 	function editContext($args, $request) {
-            
+           
 		// Get the journal ID. (Not the same as the context!)
 		$journalId = $request->getUserVar('rowId');
 

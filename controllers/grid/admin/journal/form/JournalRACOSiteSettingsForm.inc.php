@@ -20,7 +20,7 @@ class JournalRACOSiteSettingsForm extends ContextRACOSiteSettingsForm {
 	 * Constructor.
 	 * @param $contextId omit for a new journal
 	 */
-	function __construct($contextId = null) {
+	function __construct($contextId = null) {            
 		parent::__construct($contextId);
 	}
 
