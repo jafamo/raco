@@ -82,6 +82,7 @@ class TemplateManager extends PKPTemplateManager {
 					'itemsPerPage' => $context->getSetting('itemsPerPage'),
 					'enableAnnouncements' => $context->getSetting('enableAnnouncements'),
 					'contextSettings' => $context->getSettingsDAO()->getSettings($context->getId()),
+                                        'contextSetting' => $context->getSettingsDAO()->getSettings($context->getId()),//RACO
 					'disableUserReg' => $context->getSetting('disableUserReg'),
 				));
 

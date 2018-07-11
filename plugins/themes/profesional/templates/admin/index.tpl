@@ -1,3 +1,4 @@
+
 {**
  * templates/admin/index.tpl
  *
@@ -26,10 +27,14 @@
 		{call_hook name="Templates::Admin::Index::SiteManagement"}                
 		{if $multipleContexts}
 			<li><a href="{url op="settings"}">{translate key="admin.siteSettings"}</a></li>
-		{/if}                
+		{/if}
+               
+                {** MORE OPTIONS**}
+                <li><a href="{url op="context"}">More Options </a></li>
+                {call_hook name="Templates::Admin::Index::SiteManagement"}
 	</ul>
-
-	<h3>{translate key="admin.adminFunctions"}</h3>
+        
+        <h3>{translate key="admin.adminFunctions"}</h3>
 
 	<ul>
 		<li><a href="{url op="systemInfo"}">{translate key="admin.systemInformation"}</a></li>

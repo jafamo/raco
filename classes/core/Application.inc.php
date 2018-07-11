@@ -117,6 +117,8 @@ class Application extends PKPApplication {
 			'SubscriptionDAO' => 'classes.subscription.SubscriptionDAO',
 			'SubscriptionTypeDAO' => 'classes.subscription.SubscriptionTypeDAO',
 			'UserDAO' => 'classes.user.UserDAO',
+                        'ParticipantDAO' => 'classes.participant.ParticipantDAO',
+                        'RevistaDAO' => 'classes.revista.RevistaDAO',
 			'UserSettingsDAO' => 'classes.user.UserSettingsDAO'
 		));
 	}

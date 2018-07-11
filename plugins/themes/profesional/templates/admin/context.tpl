@@ -17,16 +17,16 @@
 	// Initialise JS handler.
 	$(function() {ldelim}
 		$('#contexts').pkpHandler(
-				'$.pkp.pages.admin.ContextsHandler');
+				'$.pkp.pages.admin.ContextHandler');
 	{rdelim});
 </script>
 
 <div class="pkp_page_content pkp_page_admin">
 
-	<div id="contexts">
+	<div id="context">
 		
 
-		{url|assign:journalsUrl router=$smarty.const.ROUTE_COMPONENT component="grid.admin.journal.JournalGridHandler" op="fetchGrid" escape=false}
+		{url|assign:journalsUrl router=$smarty.const.ROUTE_COMPONENT component="grid.admin.journal.JournalRACOGridHandler" op="fetchGrid" escape=false}
 		{load_url_in_div id="journalGridContainer" url=$journalsUrl}
 	</div>
 
