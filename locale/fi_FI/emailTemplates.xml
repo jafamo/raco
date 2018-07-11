@@ -812,5 +812,8 @@ Päätöksemme on: Käsikirjoitus on hylätty<br />
 {$editorialContactSignature}<br />]]></body>
 		<description>This email is send to the author if the editor declines his submission initially, before the review stage</description>
 	</email_text>
+<<<<<<< HEAD
 
+=======
+>>>>>>> release
 </email_texts>

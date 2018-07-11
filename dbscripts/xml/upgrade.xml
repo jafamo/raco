@@ -11,7 +11,7 @@
   *
   -->
 
-<install version="3.1.1.0">
+<install version="3.1.1.2">
 	<code function="checkPhpVersion" />
 
 	<upgrade minversion="2.0.0.0" maxversion="2.3.9.9">
@@ -91,11 +91,14 @@
 		<code function="migrateSRLocale" />
 	</upgrade>
 
+<<<<<<< HEAD
 	<upgrade minversion="2.4.0.0" maxversion="3.1.9.9">
 		<!-- migrateUserAndAuthorNames should be after migrateSRLocale -->
 		<code function="migrateUserAndAuthorNames" condition="return $installer->tableExists('users_tmp');" />
 	</upgrade>
 
+=======
+>>>>>>> release
 	<upgrade minversion="2.4.0.0" maxversion="2.4.9.9">
 		<code function="concatenateIntoAbout" />
 		<code function="concatenateIntoMasthead" />

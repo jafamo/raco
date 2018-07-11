@@ -25,6 +25,7 @@
 <div class="pkp_page_content pkp_page_admin">
     
 	<div id="contexts">
+<<<<<<< HEAD
 		{if $openWizardLinkAction}  
 			<div id="{$openWizardLinkAction->getId()}" class="pkp_linkActions inline">                           
 				{include file="linkAction/linkAction.tpl" action=$openWizardLinkAction contextId="contexts" selfActivate=true}                                 
@@ -32,6 +33,10 @@
 		{/if}
 <<<<<<< HEAD
                 
+=======
+		
+
+>>>>>>> release
 		{url|assign:journalsUrl router=$smarty.const.ROUTE_COMPONENT component="grid.admin.journal.JournalGridHandler" op="fetchGrid" escape=false}
 		{load_url_in_div id="journalGridContainer" url=$journalsUrl}              
 =======

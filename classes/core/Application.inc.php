@@ -121,6 +121,9 @@ class Application extends PKPApplication {
                         'CarhusDAO' => 'classes.carhus.CarhusDAO',
 			'FecytDAO' => 'classes.fecyt.FecytDAO',
                         'JcrDAO' => 'classes.jcr.JcrDAO',
+                        'ParticipantDAO' => 'classes.participant.ParticipantDAO',
+                        'RevistaDAO' => 'classes.revista.RevistaDAO',
+			'UserSettingsDAO' => 'classes.user.UserSettingsDAO'
 		));
 	}
 

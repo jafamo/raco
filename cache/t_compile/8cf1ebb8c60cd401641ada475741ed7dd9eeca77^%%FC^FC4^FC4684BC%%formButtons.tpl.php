@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25-dev, created on 2018-06-21 15:39:38
+<?php /* Smarty version 2.6.25-dev, created on 2018-07-11 14:16:42
          compiled from form/formButtons.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'fbvFormSection', 'form/formButtons.tpl', 19, false),array('modifier', 'concat', 'form/formButtons.tpl', 22, false),array('modifier', 'uniqid', 'form/formButtons.tpl', 22, false),array('function', 'fbvElement', 'form/formButtons.tpl', 31, false),array('function', 'translate', 'form/formButtons.tpl', 49, false),)), $this); ?>

@@ -9,7 +9,11 @@
  *}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
+<<<<<<< HEAD:plugins/generic/htmlArticleGalley/templates/display.tpl
 {capture assign="pageTitleTranslated"}{translate key="article.pageTitle" title=$article->getLocalizedTitle()}{/capture}
+=======
+{translate|assign:"pageTitleTranslated" key="article.pageTitle" title=$article->getLocalizedTitle()}
+>>>>>>> release:plugins/generic/htmlArticleGalley/display.tpl
 {include file="frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape} pkp_op_{$requestedOp|escape}">
 
