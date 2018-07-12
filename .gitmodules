@@ -44,3 +44,6 @@
 [submodule "plugins/reports/counter/classes/COUNTER"]
 	path = plugins/reports/counter/classes/COUNTER
 	url = https://github.com/ulsdevteam/COUNTER.git
+[submodule "pkp-lib"]
+	path = pkp-lib
+	url = http://javier.farinos@git.xc.csuc.cat/javier.farinos/pkp-lib.git
