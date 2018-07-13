@@ -215,8 +215,6 @@ files_dir = /opt/lampp/htdocs/files.ojs
 ; Windows users should use forward slashes
 public_files_dir = /opt/lampp/htdocs/files.ojs
 
->>>>>>> release
-
 ; Permissions mask for created files and directories
 umask = 0022
 

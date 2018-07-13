@@ -31,6 +31,13 @@
 			</div>
 		{/if}
                 
+<<<<<<< HEAD
+=======
+=======
+		
+
+>>>>>>> release
+>>>>>>> ae15c75171ad17d6dacad6c505fc80cbe0320e10
 		{url|assign:journalsUrl router=$smarty.const.ROUTE_COMPONENT component="grid.admin.journal.JournalGridHandler" op="fetchGrid" escape=false}
 		{load_url_in_div id="journalGridContainer" url=$journalsUrl}              
 

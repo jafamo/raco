@@ -13,6 +13,7 @@
             <file>file:/opt/lampp/htdocs/ojs/templates/admin/contexts.tpl</file>
             <file>file:/opt/lampp/htdocs/ojs/plugins/themes/profesional/templates/admin/contexts.tpl</file>
             <file>file:/opt/lampp/htdocs/ojs/plugins/themes/profesional/templates/admin/contextSettings.tpl</file>
+            <file>file:/opt/lampp/htdocs/ojs/classes/template/TemplateManager.inc.php</file>
         </group>
     </open-files>
 </project-private>

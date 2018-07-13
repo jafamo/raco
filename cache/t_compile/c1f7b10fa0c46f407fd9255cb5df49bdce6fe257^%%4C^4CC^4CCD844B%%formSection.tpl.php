@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25-dev, created on 2018-06-21 15:39:38
+<?php /* Smarty version 2.6.25-dev, created on 2018-07-11 14:16:42
          compiled from form/formSection.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'form/formSection.tpl', 12, false),array('modifier', 'assign', 'form/formSection.tpl', 14, false),array('function', 'translate', 'form/formSection.tpl', 14, false),)), $this); ?>
