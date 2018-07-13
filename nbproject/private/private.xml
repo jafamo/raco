@@ -8,6 +8,11 @@
             <file>file:/opt/lampp/htdocs/ojs/lib/pkp/classes/user/form/RegistrationForm.inc.php</file>
             <file>file:/opt/lampp/htdocs/ojs/pages/carhus/CarhusHandler.inc.php</file>
             <file>file:/opt/lampp/htdocs/ojs/templates/frontend/pages/A.tpl</file>
+            <file>file:/opt/lampp/htdocs/ojs/plugins/themes/profesional/templates/admin/index.tpl</file>
+            <file>file:/opt/lampp/htdocs/ojs/templates/management/settings/website.tpl</file>
+            <file>file:/opt/lampp/htdocs/ojs/templates/admin/contexts.tpl</file>
+            <file>file:/opt/lampp/htdocs/ojs/plugins/themes/profesional/templates/admin/contexts.tpl</file>
+            <file>file:/opt/lampp/htdocs/ojs/plugins/themes/profesional/templates/admin/contextSettings.tpl</file>
         </group>
     </open-files>
 </project-private>

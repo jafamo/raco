@@ -191,6 +191,11 @@
 	<message key="editor.submission.proof.manageProofFilesDescription">Zaten herhangi bir başvuru aşamasında yüklenmiş olan tüm dosyalar için aşağıdaki onay kutusunu ve tıklayarak Dahil kontrol ederek Redaksiyon liste eklenebilir. Arama: Tüm mevcut dosyalar listelenir ve dahil edilmesi için seçilebilir.</message>
 	<message key="editor.publicIdentificationExists">Diğer objeler (sayı, makale, dizgi veya ek dosya) için '{$publicIdentifier}' adlı genel belirleyici zaten var. Lütfen derginizdeki tekil belirleyicileri seçiniz.</message>
 	<message key="editor.article.remove">Kaldır</message>
+<<<<<<< HEAD
 	<message key="editor.review.notInitiated">İnceleme süreci henüz başlatılmadı.</message>
 	<message key="editor.article.coverImage">Kapak resmi</message>
+=======
+    <message key="editor.review.notInitiated">İnceleme süreci henüz başlatılmadı.</message>
+		<message key="editor.article.coverImage">Kapak resmi</message>
+>>>>>>> release
 </locale>

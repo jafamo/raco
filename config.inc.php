@@ -29,7 +29,7 @@
 installed = On
 
 ; The canonical URL to the OJS installation (excluding the trailing slash)
-base_url = "http://localhost:800/ojs"
+base_url = "http://pkp.sfu.ca/ojs"
 
 ; Session cookie name
 session_cookie_name = OJSSID
@@ -52,7 +52,8 @@ scheduled_tasks = Off
 ; I.e.:
 ; <entry key="Europe/Amsterdam" name="Amsterdam" />
 ; time_zone="Amsterdam"
-time_zone = "UTC"
+#time_zone = "UTC"
+time_zone = "Madrid"
 
 ; Short and long date formats
 date_format_trunc = "%m-%d"
@@ -213,6 +214,8 @@ files_dir = /opt/lampp/htdocs/files.ojs
 ; should be relative to the base OJS directory)
 ; Windows users should use forward slashes
 public_files_dir = /opt/lampp/htdocs/files.ojs
+
+>>>>>>> release
 
 ; Permissions mask for created files and directories
 umask = 0022
