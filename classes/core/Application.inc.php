@@ -118,11 +118,11 @@ class Application extends PKPApplication {
 			'SubscriptionTypeDAO' => 'classes.subscription.SubscriptionTypeDAO',
 			'UserDAO' => 'classes.user.UserDAO',
 			'UserSettingsDAO' => 'classes.user.UserSettingsDAO',
-                        'CarhusDAO' => 'classes.carhus.CarhusDAO',
+            'CarhusDAO' => 'classes.carhus.CarhusDAO',
 			'FecytDAO' => 'classes.fecyt.FecytDAO',
-                        'JcrDAO' => 'classes.jcr.JcrDAO',
-                        'ParticipantDAO' => 'classes.participant.ParticipantDAO',
-                        'RevistaDAO' => 'classes.revista.RevistaDAO',
+            'JcrDAO' => 'classes.jcr.JcrDAO',
+            'ParticipantDAO' => 'classes.participant.ParticipantDAO',
+            'RevistaDAO' => 'classes.revista.RevistaDAO',
 			'UserSettingsDAO' => 'classes.user.UserSettingsDAO'
 		));
 	}
